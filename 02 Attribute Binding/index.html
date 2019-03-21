@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>02</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+	<div class="product">
+		
+		<div class="product-image">
+			<h2>{{ nameGreen }}</h2>
+			<img :src="imageGreen" />
+			<h2>{{ nameGreen }}</h2>			
+			<img v-bind:src="imageGreen" alt="altText" />
+			<h2>{{ nameGreen }}</h2>			
+			<img v-bind:src="imageGreen" />
+		</div>
+		
+		
+		<h2>{{ nameBlue }}</h2>
+		<div class="product-image">
+			<img v-bind:src="imageBlue"/>
+		</div>
+		
+
+		<div class="product-info">
+			<h1>{{ product }}</h1>
+		</div>
+
+	</div>
+<!-- 	<h1>{{ product + ' $750' }}</h1>
+	<h1>{{ product.split('').reverse().join('') }}</h1> -->
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
